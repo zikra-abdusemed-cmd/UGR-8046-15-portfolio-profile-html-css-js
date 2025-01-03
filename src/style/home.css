@@ -1,0 +1,655 @@
+.dropdown{
+    display: inline-block;
+    display: none;
+    width:20px;
+    z-index: 1000;
+}
+.dropdown p{
+    margin:0px;
+    padding: 0px;
+    width:20px;
+    color: #435A6B;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: #435A6B;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+header{
+    background-color: #E5E5E5;
+    width: 1440px;
+    height: 200px;
+    flex-shrink: 0;
+    padding-top:0px;
+    top:0px;
+    position:absolute;
+    border-bottom: #9CB3C2 solid 5px ;
+    box-shadow: 0px 10px 20px rgba(2, 2, 2, 0.81);
+}
+
+
+h1{
+    text-align: center;
+    padding-top:10px;
+    color:#09274D;
+    font-family: Kavoon;
+    font-size: 35px;
+    
+    
+}
+.page-title{
+    display:none;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    gap:95px;
+    padding-top: 28px;
+    
+    
+    
+    
+    
+}
+nav button {
+    
+    list-style: none;
+    border-style: outset;
+    border-color:#435A6B ;
+    border-radius: 10px;
+    background-color:#435A6B  ;
+    height:57px;
+    padding:5px;
+   
+    
+}
+nav button a{
+    text-decoration: none;
+    color:white;
+}
+button {
+   
+    transition: all 0.3s ease
+}
+button:hover{
+    background-color: black;
+}
+.home{
+    width:132px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+   
+}
+.bio{
+    width:132px;
+    
+}
+.educational_background{
+    width:227px;
+}
+.achievements{
+    width:172px;
+}
+.blog{
+    width:132px;
+}
+
+.bg1{
+    width: 601px;
+    height: 558px;
+    position: absolute;
+    top: 160px;
+    left: 850px;
+}
+.image1{
+    
+        width: 266px;
+        height:267px;
+       
+        
+  
+}
+.section-1{
+    display:flex;
+    gap:208px;
+    justify-content: center;
+    padding-top: 503px;
+
+    
+}
+.intro{
+    width: 403px;
+height: 30px;
+flex-shrink: 0;
+color: #5A7184;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 24px;
+font-style: normal;
+line-height: 160%; 
+padding-top: 40px;;
+}
+.discription{
+    width: 474px;
+height: 107px;
+flex-shrink: 0;
+color: #2C2C2C;
+font-size: 20px;
+font-style: normal;
+line-height: 160%; 
+}
+.image2{
+    width: 479px;
+    height: 750px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text2 p{
+    color:#5A7184;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 160%;
+    width:500px;
+}
+.section-2{
+    display:flex;
+    gap:95px;
+    justify-content: center;
+
+}
+.hero{
+    display:flex;
+    flex-direction: column;
+    gap:133px;
+
+
+}
+.bg2{
+    width: 601px;
+height: 558px;
+flex-shrink: 0;
+position: absolute;
+left:0px;
+top:1450px;
+
+}
+
+
+
+
+footer{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+    background-color:#E5E5E5;
+    border-top: #9CB3C2 solid 5px;
+    text-align: center;
+    width: 1440px;
+    height: 150px;
+    top:1900px;
+    left:0px;
+    
+    
+    
+}
+footer a img{
+    width:30px;
+    height:30px;
+    
+}
+footer a{
+    color:black;
+}
+.row1{
+    display:flex;
+    gap:165px;
+    padding-top: 35px;
+    justify-content: center;
+}
+.row2{
+    display:flex;
+    gap:147px;
+   
+    justify-content: center;
+}
+
+
+
+
+
+/**Mobile-Portrait**/
+@media (max-width: 320px ){
+
+    .dropdown{
+        display: block;
+        font-size: 24px;
+        position: absolute;
+        left:330px;
+        top:40px;
+
+    }
+    .dropdown a{
+        font-size: 15px;
+    }
+    .content{
+        right:0px;
+    }
+    .header{
+        width:360px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    }
+    .nav-button{
+        display:none;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .page-title{
+        display:contents;
+        color: #5A7184;
+        font-family: Junge;
+        font-size: 18px;
+        position: relative;
+        top:62px;
+        padding-left: 16px;
+        
+
+    }
+    .bg1{
+        width: 150px;
+        height: 150px;
+        margin: 0px;
+        position: relative;
+        left:220px;
+        top:65px;
+        
+    }
+    .intro{
+        width: 189px;
+        height: 43px;
+        font-size: 16px;
+        padding: 0px;
+        position: relative;
+       
+    }
+    .discription{
+        width: 155px;
+        height: 173px;
+        line-height: 150%;
+        position: relative;
+        font-size:14px;
+        margin-top:20px;
+    }
+    .image1{
+        width: 113px;
+        height: 122px;
+        position: relative;
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .section-1{
+        gap:15px;
+        padding: 0px;
+        margin-left: 20px;
+    }
+    .image2{
+        width: 132.109px;
+        height: 283.379px;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 20px;
+        margin-top:200px;
+    }
+    .section-2{
+        gap:22px;
+        padding: 0px;
+        margin: 0px;
+        height: 650px;
+    }
+    .text2{
+        font-size: 16px;
+        height: 881px;
+        position: relative;
+      
+        
+    }
+    .text2 p{
+        width: 155px;
+        font-size:14px;
+    }
+    .text2 h3{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .bg2{
+        width: 178.499px;
+        height: 174.465px;
+        margin-bottom:-15px;
+        position: relative;
+        left:-10px;
+        top:1px;
+    
+    }
+    footer{
+        width: 320px;
+        height: 130px;
+        display: flex;
+        position: relative;
+        top:0px;
+        left:-10px;
+        display: flex;
+        flex-direction: row;
+        gap:40px;
+        padding-left: 60px;
+        
+    
+        
+    }
+    footer a img{
+        width: 25px;
+        height:21px;}
+    footer a{
+        font-size: 8px;
+    }    
+    .row1{
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+        width:90px;
+        margin-top: -35px;
+
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+        width:90px;
+
+    }
+}
+
+
+/**Mobile-Lanscape**/
+@media (min-width:321px) and (max-width:567px){
+    .dropdown{
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        left:530px;
+        top:40px;
+
+    }
+    .dropdown a{
+        font-size: 15px;
+    }
+    .content{
+        right:0px;
+        width:200px;
+    }
+    .header{
+        width:595px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    }
+    .nav-button{
+        display: none;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .page-title{
+        display: contents;
+        color: #5A7184;
+        font-family: Junge;
+        font-size: 18px;
+        padding-left: 32px;
+
+    }
+    .bg1{
+        width: 250.112px;
+        height: 250.888px;
+        margin: 0px;
+        position: relative;
+        left:350px;
+        top:65px;
+
+    }
+    .image1{
+        width: 171.575px;
+        height: 178.104px;
+        position: relative;
+        margin: 0px;
+       
+    }
+    .section-1{
+        gap:45px;
+        padding: 0px;
+    }
+    .intro{
+        width: 273px;
+        height: 30px;
+        font-size: 17px;
+        position: relative;
+       
+
+    }
+    .discription{
+        width: 258px;
+        height: 144px;
+        font-size: 15px;
+    }
+    .image2{
+        width: 221.614px;
+        height: 391.275px;
+        position: relative;
+        top:250px;
+    }
+    .section-2{
+        gap:45px;
+        margin-left: 30px;
+    }
+    .text2 p{
+        width: 258px;
+    }
+    .text2 h3{
+        font-size: 17px;
+    }
+
+    .bg2{
+        width: 250.112px;
+        height: 250.888px;
+        margin: 0px;
+        margin-bottom: -30px;
+        position: relative;
+        top:0px;
+        left:-10px;
+
+    }
+
+    footer{
+        width: 610px;
+        height: 130px;
+        position: relative;
+        top:0px;
+        left:-10px;
+        
+        
+    }
+    footer a img{
+        width: 25px;
+        height:21px;}
+    footer a{
+        font-size: 8px;
+    }    
+    .row1{
+        gap:137px;
+    }
+    .row2{
+        gap:130px;
+        margin-left: 10px;
+    }
+    
+
+}
+
+
+
+/**Tablet-Portrait**/
+@media (min-width:568px) and (max-width:768px){
+    .dropdown{
+        display: block;
+        font-size: 32px;
+        position: absolute;
+        left:630px;
+        top:40px;
+        width:200px;
+
+    }
+    
+    .dropdown a{
+        font-size: 15px;
+    }
+    .content{
+        right:0px;
+    
+    }
+    .header{
+        width: 768px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    
+    }
+    .nav-button{
+        display: none;
+
+    }
+    .page-title{
+        display: contents;
+        font-size: 18px;
+        padding-left: 32px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .bg1{
+        width: 401px;
+        height: 338px;
+        margin: 0px;
+        position: relative;
+        left:370px;
+        top:65px;
+    }
+    
+    .image1{
+        width: 181px;
+        height: 181px; 
+    }
+    .section-1{
+        padding: 0px;
+        gap:80px;
+    }
+    .intro{
+        font-size: 17px;
+    }
+    .discription{
+        width: 351px;
+        font-size: 18px;
+        line-height: 160%;  
+    }
+    .image2{
+        width: 258px;
+        height: 365px;
+    }
+    .text2 p{
+        width: 340px;
+        font-size: 18px;
+        line-height: 160%;
+    }
+    .text2 h3{
+        font-size: 20px;
+    }
+    .bg2{
+        width: 401px;
+        height: 338px;
+        position: relative;
+        top:0px;
+        left:-10px;
+        margin-bottom: -30px;
+    }
+    footer{
+        width:780px;
+        position: relative;
+        top: 0px;
+        left:-10px;
+    }
+
+
+}
+
+
+/**Tablet-Landscape**/
+@media (min-width:769px) and (max-width:1024px){
+   
+    .section-1{
+        gap:80px;
+        padding-top: 530px;
+        padding-left: 500px;
+    }
+    .section-2{
+        padding-left: 400px;
+    }
+    .image1{
+        width: 316px;
+        height: 310px;
+    }
+    .intro{
+        font-size: 22px;
+    }
+    .discription{
+        width: 470px;
+        font-size: 20px;
+        line-height: 170%;
+    }
+    .image2{
+        width: 390px;
+        height: 543px;
+    }
+    .text2 p{
+        font-size: 20px;
+        width: 340px;
+        line-height: 170%;
+    }
+    .text2 h3{
+        font-size: 20px;
+    }
+}

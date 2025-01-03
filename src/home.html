@@ -3,82 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style/home.css">
+
 </head>
 <body>
-    <header>
-        <h1>My Portfolio Website</h1>
-    </header>
-    <nav>
-        <div><img src="icons/icon12.png" alt="menu_icon"></div>
-        <div>Home</div>
-        <ul>
+    <div>
+       <img src="background_image/bg1.png" class="bg1" atl="bg1">
+    </div>
+    <header class="header">
         
-            <li><a href="home.html"><img src="icons/icon1.png" alt="home_icon"><span>Home</span></a></li>
-            <li><a href="bio.html"><img src="icons/icon2.png" alt="bio icon"><span>Bio</span></a></li>
-            <li><a href="educational_background.html"><img src="icons/icon3.png" alt="education_icon"><span>Educational Background</span></a></li>
-            <li><a href="achievments.html"><img src="icons/icon4.png" alt="certificate_icon"><span>Achievments</span></a></li>
-            <li><a href="blog.html"><img src="icons/icon5.png" alt="blod_icon"><span>Blog</span></a></li>
-        </ul>
+        <div class="dropdown">
+            <p>☰</p>
+            <div class="content">
+                <a href="home.html">Home</a>
+                <a href="bio.html">Bio</a>
+                <a href="achievements.html">Educational Background</a>
+                <a href="educational_background.html">Achievements</a>
+                <a href="blog.html">Blog</a>
+            </div>
+        </div>
         
-    </nav>
+        <h1>
+            My Portfolio Website
+        </h1>
+        <p class="page-title">Home</p>
+        <nav class="nav-button">
+            
+                <button class="home"><a href="home.html">Home</a></button>
+                <button class="bio"><a href="bio.html">Bio</a></button>
+                <button class="educational_background"><a href="educational_background.html">Educational Background</a></button>
+                <button class="achievements"><a href="achievements.html">Achievements</a></button>
+                <button class="blog"><a href="blog.html">Blog</a></button>
+            
+        </nav>
+      </header>  
+<main>
    
-    <main>
-
-<section>
-   <div> <img src="images/image1.png" alt="profile_image"> </div> 
-   <div> <h2> <span>Welcome!</span> <span>I am Zikra Abdusemed</span>, a Software Engineering student at Addis Ababa Institute of Technology. 
-    This website is dedicated to sharing insights into both my personal and professional journey. </h2>
-   </div> 
+    <section class="hero">
+    <section class="section-1">
+        <div>
+            <image src="images/image1.png" alt="illustration" class="image1"></image>
+        </div>
+        
+        <div >
+            <div class="intro">
+                Welcome! I am Zikra Abdusemed
+            </div> 
+            <div class="discription">
+            A Software Engineering student at Addis Ababa Institute of Technology. 
+            This website is dedicated to sharing insights into both my personal and professional journey.
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div>
+            <image src="images/image2.png" alt="image2" class="image2"></image>
+        </div>
+        <div class="text2">
+            <h3>Here is an overview of the website.</h3>
+                   
+            <h3>Home</h3>
+                        
+            <p>This will give an introduction of what the website is going to cover. </p>
+                            
+            <h3>Bio</h3>
+                         
+            <p> This page will cover about my background and childhood. </p>
+        
+            <h3>Educational Background</h3>
+                        
+            <p>This page will give a brief overview of the schools that I have
+                attended through the years. </p>
+        
+            <h3>Achievemets</h3>
+                        
+            <p>This page will be containing certification from different
+                accomplishments. </p>
+                        
+            <h3>Blog</h3>
+                        
+            <p>This page will introduce my hobbies and interests providing
+                images and videos.</p>
+        </div>     
+    </section>
 </section>
+<div >
+   <img src="background_image/bg2.png" class="bg2" alt="bg2">
+</div>
+</main> 
+<footer>
+    <div class=" row1">
+        <a href="https://www.linkedin.com/in/zikra-mohammed-4bb42232b/"><img src="icons/icon6.png" alt="linkedin_icon" class="icon1">Linkedin</a>
+        <a href="https://github.com/zikra-abdusemed-cmd"><img src="icons/icon7.png" alt="github_icon" class="icon2">Github</a>
+        <a href="mailto:zikramohammed00@gmail.com"><img src="icons/icon8.png" alt="email_icon" class="icon3">email</a>
+    </div>
 
-    
-    
-<section> 
-
-        <div><img src="images/image2.png" alt="preview_page"></div>
-<div>
-    <h3>Here is an overview of the website.</h3>
-           
-    <h3>Home</h3>
-                
-    <p>This will give an introduction of what the website is going to cover. </p>
-                    
-    <h3>Bio</h3>
-                 
-    <p> This page will cover about my background and childhood. </p>
-
-    <h3>Educational Background</h3>
-                
-    <p>This page will give a brief overview of the schools that I have
-        attended through the years. </p>
-
-    <h3>Achievmets</h3>
-                
-    <p>This page will be containing certification from different
-        accomplishments. </p>
-                
-    <h3>blog</h3>
-                
-    <p>This page will introduce my hobbies and interests providing
-        images and videos.</p>
-</div>     
-            
-</section>  
-            
-
-    </main>
-    <footer>
-        <a href="https://www.linkedin.com/in/zikra-mohammed-4bb42232b/"><img src="icons/icon6.png" alt="linkedin_icon">Linkedin</a>
-        <a href="https://github.com/zikra-abdusemed-cmd"><img src="icons/icon7.png" alt="github_icon">Github</a>
-        <a href="mailto:zikramohammed00@gmail.com"><img src="icons/icon8.png" alt="email_icon">email</a>
-        <a href="https://www.instagram.com/choco_loves_me/"><img src="icons/icon9.png" alt="instagram_icon">instagram</a>
-        <a href="https://t.me/you_can_call_me_zi"><img src="icons/icon10.png" alt="telegram_icon">Telegram</a>
-        <a href="https://wa.me/251904276328"><img src="icons/icon11.png" alt="phone_icon">WhatsApp</a>
-
+    <div class="row2">
+        <a href="https://www.instagram.com/choco_loves_me/"><img src="icons/icon9.png" alt="instagram_icon" class="icon4">instagram</a>
+        <a href="https://t.me/you_can_call_me_zi"><img src="icons/icon10.png" alt="telegram_icon" class="icon5">Telegram</a>
+        <a href="https://wa.me/251904276328"><img src="icons/icon11.png" alt="phone_icon" class="icon6">WhatsApp</a>
+    </div>
         
 
     </footer>
+    
+  </footer>
+</body>
+</html>   
     
 </body>
 </html>

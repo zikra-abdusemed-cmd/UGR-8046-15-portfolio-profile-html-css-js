@@ -1,0 +1,636 @@
+.dropdown{
+    display: inline-block;
+    display: none;
+    width:20px;
+    z-index: 1000;
+}
+.dropdown p{
+    margin:0px;
+    padding: 0px;
+    width:20px;
+    color: #435A6B;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: #435A6B;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+
+header{
+    background-color: #E5E5E5;
+    width: 1440px;
+    height: 200px;
+    flex-shrink: 0;
+    padding-top:0px;
+    top:0px;
+    position: absolute;
+    border-bottom: #9CB3C2 solid 5px ;
+    box-shadow: 0px 10px 20px rgba(2, 2, 2, 0.81);
+}
+h1{
+    text-align: center;
+    padding-top:10px;
+    color:#09274D;
+    font-family: Kavoon;
+    font-size: 35px;
+    
+    
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    gap:95px;
+    padding-top: 28px;}
+    
+ .page-title{
+    display: none;
+ }   
+    
+    
+    
+
+nav button {
+    
+    list-style: none;
+    border-style: outset;
+    border-color:#435A6B ;
+    border-radius: 10px;
+    background-color:#435A6B  ;
+    height:57px;
+    padding:5px;
+   
+    
+}
+nav button a{
+    text-decoration: none;
+    color:white;
+}
+button {
+   
+    transition: all 0.3s ease
+}
+button:hover{
+    background-color: black;
+}
+.home{
+    width:132px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+   
+}
+.bio{
+    width:132px;
+    
+}
+.educational_background{
+    width:227px;
+}
+.achievements{
+    width:172px;
+}
+.blog{
+    width:132px;
+}
+
+
+
+.image3{
+    width:180px;
+    height: 260px;
+    padding-top: 300px;
+    padding-left: 122px;
+
+}
+.image4{
+    width:130px;
+    height: 260px;
+    padding-top: 40px;
+    padding-left: 345px;
+
+
+}
+.image5{
+    width:150px;
+    height: 260px;
+    padding-top: 40px;
+    padding-left: 564px;
+    
+}
+
+.text1{
+    padding-top: 307px;
+    width: 463px;
+height: 181px;
+flex-shrink: 0;
+font-size: 20px;
+line-height: 180%;
+}
+.video1{
+    width: 456px;
+height: 224px;
+flex-shrink: 0;
+padding-top: 450px;
+}
+.text2{
+    width: 422px;
+height: 76px;
+flex-shrink: 0;
+padding-top: 78px;
+line-height: 180%;
+font-size: 20px;
+margin-bottom: 70px;
+}
+main{
+    display: flex;
+    gap:88px;
+}
+
+footer{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+    background-color:#E5E5E5;
+    border-top: #9CB3C2 solid 5px;
+    text-align: center;
+    width: 1440px;
+    height: 150px;
+    top:1900px;
+    left:0px;
+    
+    
+    
+}
+footer a img{
+    width:30px;
+    height:30px;
+    
+}
+footer a{
+    color:black;
+}
+.row1{
+    display:flex;
+    gap:165px;
+    padding-top: 35px;
+    justify-content: center;
+}
+.row2{
+    display:flex;
+    gap:147px;
+   
+    justify-content: center;
+}
+
+
+/**Mobile-Portrait**/
+@media (max-width: 320px) {
+
+    .dropdown {
+        display: block;
+        font-size: 24px;
+        position: absolute;
+        left:330px;
+        top:40px;
+
+    }
+    .dropdown a{
+        font-size: 15px;
+    }
+    .content{
+        right:0px;
+    }
+    .header{
+        width:360px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    }
+    .nav-button{
+        display:none;
+    }
+    .header{
+        width:360px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    }
+    .nav-button{
+        display:none;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .page-title{
+        display:contents;
+        color: #5A7184;
+        font-family: Junge;
+        font-size: 18px;
+        position: relative;
+        top:62px;
+        padding-left: 16px;
+        
+    }
+    main{
+        gap:10px;
+    }
+
+    .text1{
+        width: 134px;
+        font-size: 14px;
+        line-height: 150%;
+        position: relative;
+        top:180px;
+        left:40px;
+        padding: 0px;
+    }
+    .text2{
+        width: 134px;
+        font-size: 14px;
+        line-height: 150%;
+        position: relative;
+        top:200px;
+        left:40px;
+    }
+.diagonal{
+    width: 143px;
+    gap:5px;
+    position: relative;
+    top:275px;
+    left:20px;
+}
+.image3{
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    
+}
+.image4{
+    width: 50px;
+    height: 80px;
+    padding: 0px;
+    position: relative;
+    left:100px;
+    bottom:40px;
+    
+}
+.image5{
+    width: 50px;
+    height: 80px;
+    padding: 0px;
+    position: relative;
+    bottom:70px;
+    left:30px;
+
+    
+}
+.video1{
+    width: 134px;
+    height: 238px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top:550px;
+    left:-130px;
+
+}
+footer{
+    width: 320px;
+    height: 130px;
+    display: flex;
+    position: relative;
+    top:700px;
+    left:-10px;
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    padding-left: 60px;
+    
+
+    
+}
+footer a img{
+    width: 25px;
+    height:21px;}
+footer a{
+    font-size: 8px;
+}    
+.row1{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    width:90px;
+    margin-top: -35px;
+
+}
+.row2{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    width:90px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+/**Mobile-Landscape**/
+@media (min-width:321px) and (max-width:567px) {
+
+    .dropdown{
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        left:530px;
+        top:40px;
+
+    }
+    .dropdown a{
+        font-size: 15px;
+    }
+    .content{
+        right:0px;
+        width:200px;
+    }
+
+    .header{
+        width:567px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    }
+    .nav-button{
+        display:none;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .page-title{
+        display:contents;
+        color: #5A7184;
+        font-family: Junge;
+        font-size: 18px;
+        position: relative;
+        top:62px;
+        padding-left: 16px;
+        
+    }
+    main{
+        gap:10px;
+    }
+
+    .text1{
+        width: 253px;
+        font-size: 15px;
+        line-height: 150%;
+        position: relative;
+        top:310px;
+        left:140px;
+        padding: 0px;
+    }
+    .text2{
+        width: 253px;
+        font-size: 15px;
+        line-height: 150%;
+        position: relative;
+        top:150px;
+        left:140px;
+    }
+.diagonal{
+    width: 143px;
+    gap:5px;
+    position: relative;
+    top:275px;
+    left:20px;
+}
+.image3{
+    width: 130px;
+    height: 169px;
+    padding: 0px;
+    
+}
+.image4{
+    width: 100px;
+    height: 169px;
+    padding: 0px;
+    position: relative;
+    left:150px;
+    bottom:60px;
+    
+}
+.image5{
+    width: 100px;
+    height: 169px;
+    padding: 0px;
+    position: relative;
+    bottom:100px;
+    left:30px;
+
+    
+}
+.video1{
+    width: 257px;
+    height: 361px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top:550px;
+    left:-130px;
+
+}
+footer{
+    width: 610px;
+    height: 130px;
+    position: relative;
+    top:400px;
+    left:-10px;
+    
+    
+}
+footer a img{
+    width: 25px;
+    height:21px;}
+footer a{
+    font-size: 8px;
+}    
+.row1{
+    gap:137px;
+}
+.row2{
+    gap:130px;
+    margin-left: 10px;
+}
+
+}
+
+
+
+
+/**Tablet-Portrait**/
+@media (min-width:568px) and (max-width:768px){
+
+    .dropdown{
+        display: block;
+        font-size: 32px;
+        position: absolute;
+        left:630px;
+        top:40px;
+
+    }
+    .dropdown a{
+        font-size: 15px;
+    }
+    .content{
+        right:0px;
+        width:200px;
+    }
+    .header{
+        width: 768px;
+        height: 100px;
+        margin:0px;
+        left:0px;
+        padding-left:16px;
+    
+    }
+    .nav-button{
+        display: none;
+
+    }
+    .page-title{
+        color: #5A7184;
+        font-family: Junge;
+        display: contents;
+        font-size: 18px;
+        padding-left: 32px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    main{
+        gap:10px;
+    }
+
+    .text1{
+        width: 352px;
+        font-size: 18px;
+        line-height: 160%;
+        position: relative;
+        top:310px;
+        left:200px;
+        padding: 0px;
+    }
+    .text2{
+        width: 352px;
+        font-size: 18px;
+        line-height: 160%;
+        position: relative;
+        top:150px;
+        left:220px;
+    }
+.diagonal{
+    width: 143px;
+    gap:5px;
+    position: relative;
+    top:275px;
+    left:30px;
+}
+.image3{
+    width: 150px;
+    height: 214px;
+    padding: 0px;
+    
+}
+.image4{
+    width: 100px;
+    height: 214px;
+    padding: 0px;
+    position: relative;
+    left:180px;
+    bottom:80px;
+    
+}
+.image5{
+    width: 150px;
+    height: 214px;
+    padding: 0px;
+    position: relative;
+    bottom:150px;
+    left:30px;
+
+    
+}
+.video1{
+    width: 327px;
+    height: 488px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top:650px;
+    left:-130px;
+
+}
+footer{
+    width: 785px;
+    height: 130px;
+    position: relative;
+    top:550px;
+    left:-10px;
+    
+    
+}
+footer a img{
+    width: 25px;
+    height:21px;}
+footer a{
+    font-size: 8px;
+}    
+.row1{
+    gap:137px;
+}
+.row2{
+    gap:130px;
+    margin-left: 10px;
+}
+}
+
+
+
+
+/**Tablet-Landscape**/
+@media (min-width:769px) and (max-width:1024px){
+   
+}
+
+
+
